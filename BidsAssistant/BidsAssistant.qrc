@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Resources/folder.png</file>
+        <file>Resources/add.png</file>
+        <file>Resources/excel.png</file>
+        <file>Resources/icon.png</file>
+        <file>Resources/search.png</file>
+        <file>Resources/status.png</file>
+        <file>Resources/icon1.png</file>
+        <file>Resources/icon2.png</file>
+        <file>Resources/reset2.png</file>
+        <file>Resources/denglu.png</file>
+    </qresource>
+</RCC>
