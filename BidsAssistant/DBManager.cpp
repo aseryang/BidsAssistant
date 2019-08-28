@@ -15,7 +15,12 @@ int DBManager::init(QString& ip)
 	db.setUserName(USER_NAME);
 	db.setPassword(USER_PASSWORD);
 	//设置mysql连接断开时，自动重连
-	db.setConnectOptions("MYSQL_OPT_RECONNECT=1");
+	db.setConnectOptions("MYSQL_OPT_RECONNECT=1;\
+		CLIENT_SSL=1;\
+		CLIENT_IGNORE_SPACE=1;\
+		SSL_KEY=./client-key.pem;\
+		SSL_CERT=./client-cert.pem;\
+		SSL_CA=./ca-cert.pem");
 	if (!db.open())
 	{
 		qDebug() << "连接数据库失败！";
