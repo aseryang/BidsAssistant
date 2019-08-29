@@ -2,10 +2,15 @@
 #pragma execution_character_set("utf-8") //设置文件编码格式为UTF-8
 #define USER_CONFIG "UserConfig.ini"
 #define DB_NAME "mydb"
-#define USER_NAME "jiashengjingguan"
-#define USER_PASSWORD "Qwe123!@#"
+#if 0
+	#define USER_NAME "ssl_test"
+	#define USER_PASSWORD "123456"
+#else
+	#define USER_NAME "jiashengjingguan"
+	#define USER_PASSWORD "Qwe123!@#"
+#endif
 #define DB_PORT 3306
-#define APP_VERSION "V1.0"
+#define APP_VERSION "V1.1"
 #define APP_TITLE "南京嘉盛景观投标助手 "
 #define FILE_POSTFIX ".xlsx"
 
